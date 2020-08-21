@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tools | Zinsrechner</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/zinsrechner.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <script type="text/javascript" src="js/zinsrechner.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>                            
+        <ul>                                        <!--Header-->
+            <li id="logo">
+                <a href="index.html"><img src="img/logo.png" height="50" alt="Logo"></a>
+            </li>
+            <li class="nav">
+                <a href="index.html"><p>HOME</p></a>
+            </li>
+            <li class="nav">
+                <a href="#"><p>Zinsrechner</p></a>
+            </li>
+            <li class="nav">
+                <a href="umrechnung.html"><p>Massumrechnung</p></a>
+            </li>
+            <li class="nav">
+                <a href="rechnungstrainer.html"><p>Rechnungstrainer</p></a>
+            </li>
+            <li class="nav">
+                <a href="about.html"><p>Über mich</p></a>
+            </li>
+        </ul>
+    </header>
+
+    <content>                                     <!--Content-->
+        <h1>Zinsrechner</h1>
+        <h2 id="desc">Hier kannst du alles rund um den Jahreszins berechnen!</h2>
+        <div id="ui">
+            <select id="type" onchange="onChange();">
+                <option value="1">Nettozins (inkl. Verrechnungssteuer)</option>
+                <option value="2">Bruttozins (exl. Verrechnungssteuer)</option>
+                <option value="3">Zinssatz</option>
+                <option value="4">Kapital</option>
+            </select><br>
+            <input type="number" placeholder="Kapital" id="k0" onkeypress="onSend();"><br>
+            <input type="number" placeholder="Zinssatz" id="p" onkeypress="onSend();"><br>
+            <input id="output" type="number" placeholder="Jahreszins" readonly onkeypress="onSend();">
+        </div>
+    </content>
+
+    <footer>                                        <!--Footer-->
+        <p>&copy; Lezurex 2020</p>
+    </footer>
+</body>
+</html>

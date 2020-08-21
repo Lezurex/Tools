@@ -1,0 +1,58 @@
+#ui {
+    text-align: center;
+}
+
+select {
+    margin-top: 10px;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 5px solid #1E90FF;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    font: normal 16px/normal Arial, Helvetica, sans-serif;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(220, 220, 220, 0.5);
+    outline: none;
+    transition: 0.5s;
+}
+
+input {
+    margin-top: 10px;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 5px solid green;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    font: normal 16px/normal Arial, Helvetica, sans-serif;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(220, 220, 220, 0.5);
+    outline: none;
+    transition: 0.5s;
+}
+
+input:focus {
+    transition: 0.5s;
+    border: 5px solid firebrick;
+}
+
+input:read-only {
+    transition: 0.5s;
+    border: 5px solid #1E90FF;
+}
+
+select:hover {
+    transition: 0.5s;
+    border: 5px solid firebrick;
+}
+
+button {
+    margin-top: 10px;
+}

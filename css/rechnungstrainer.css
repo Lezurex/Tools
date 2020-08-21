@@ -1,0 +1,140 @@
+input {
+    margin-top: 10px;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 5px solid green;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    font: normal 16px/normal Arial, Helvetica, sans-serif;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(220, 220, 220, 0.5);
+    outline: none;
+    transition: 0.5s;
+}
+input:focus {
+    transition: 0.5s;
+    border: 5px solid firebrick;
+}
+
+input:read-only {
+    transition: 0.5s;
+    border: 5px solid #1E90FF;
+}
+
+button {
+    margin-top: 50px;
+}
+
+#min, #max {
+  width: 100px;
+}
+
+#ui-range-selector {
+  color: white;
+  font-family: Calibri;
+  font-size: 20pt;
+}
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    font-family: Calibri;
+    font-size: 20pt;
+    text-align: left;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    margin-right: 100px;
+    margin-top: 5px;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+#feedback {
+  color: white;
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20pt;
+}
+
+  #equation {
+    color: white;
+    display: inline-block;
+    width: 10%;
+    vertical-align: middle;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20pt;
+  }
+
+#validate {
+  margin-top: auto;
+}

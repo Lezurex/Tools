@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tools | Umrechnung</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/umrechnung.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <script type="text/javascript" src="js/umrechnung.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>                            
+        <ul>                                        <!--Header-->
+            <li id="logo">
+                <a href="index.html"><img src="img/logo.png" height="50" alt="Logo"></a>
+            </li>
+            <li class="nav">
+                <a href="index.html"><p>HOME</p></a>
+            </li>
+            <li class="nav">
+                <a href="zinsrechner.html"><p>Zinsrechner</p></a>
+            </li>
+            <li class="nav">
+                <a href="umrechnung.html"><p>Massumrechnung</p></a>
+            </li>
+            <li class="nav">
+                <a href="rechnungstrainer.html"><p>Rechnungstrainer</p></a>
+            </li>
+            <li class="nav">
+                <a href="about.html"><p>Über mich</p></a>
+            </li>
+        </ul>
+    </header>
+
+    <content>                                     <!--Content-->
+        <h1>Massumrechnung</h1>
+        <h2 id="desc">Masseinheiten ganz einfach umwandeln!</h2>
+        <div id="ui">
+            <select id="type">
+                <optgroup label="Längenmasse">
+                    <option value="0.621371">Kilometer > Meilen</option>
+                    <option value="1.60934">Meilen > Kilometer</option>
+                    <option value="0.393701">Zentimeter > Zoll</option>
+                    <option value="2.54">Zoll > Zentimeter</option>
+                </optgroup>
+                <optgroup label="Geschwindigkeit">
+                    <option value="0.621371">Kilometer pro Stunde > Meilen pro Stunde</option>
+                    <option value="1.60934">Meilen pro Stunde > Kilometer pro Stunde</option>
+                    <option value="0.277778">Kilometer pro Stunde > Meter pro Sekunde</option>
+                    <option value="3.6">Meter pro Sekunde > Kilometer pro Stunde</option>
+                </optgroup>
+                <optgroup label="Gewicht">
+                    <option value="2.20462">Kilogramm > Pfund</option>
+                    <option value="0.453592">Pfund > Kilogramm</option>
+                </optgroup>
+                <optgroup label="Temperatur">
+                    <option value="CF">Celsius > Fahrenheit</option>
+                    <option value="FC">Fahrenheit > Celsius</option>
+                    <option value="CK">Celsius > Kelvin</option>
+                    <option value="KC">Kelvin > Celsius</option>
+                </optgroup>
+            </select><br>
+            <input type="number" placeholder="Wert" id="input" onkeypress="onSend();" onchange="onSend();"><br>
+            <input id="result" type="number" placeholder="Resultat" readonly><br>
+        </div>
+    </content>
+
+    <footer>                                        <!--Footer-->
+        <p>&copy; Lezurex 2020</p>
+    </footer>
+</body>
+</html>
